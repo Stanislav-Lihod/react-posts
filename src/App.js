@@ -59,7 +59,7 @@ function App() {
       />
       {sortedAndSearchedPosts.length
         ?<PostList remove={removePost} posts={sortedAndSearchedPosts} title={'Список постов 1'}/>
-        :<div>Посты не найдены</div>      
+        :<div>Посты не найдены</div>
       }
     </div>
   );
