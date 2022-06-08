@@ -1,0 +1,38 @@
+@keyframes animationModale {
+  0% {
+    transform: translate3d(0,20px,0) scale(0.95);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0,0,0) scale(1);
+    opacity: 1;
+  }
+}
+
+.myModal{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0,0,0,0.3);
+  animation: animationModale .4s;
+}
+
+.myModalContent{
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+  min-width: 250px;
+  animation: animationModale .4s;
+}
+
+.myModal.active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: animationModale .4s;
+}
