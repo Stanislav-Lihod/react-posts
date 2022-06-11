@@ -30,7 +30,7 @@
 .post-enter-active {
   transform: translateX(0);
   opacity: 1;
-  transition: .5s;
+  transition: .3s;
 }
 .post-exit {
   opacity: 1;
@@ -38,5 +38,5 @@
 .post-exit-active {
   opacity: 0;
   transform: translateX(-150px);
-  transition: .5s;
+  transition: .3s;
 }

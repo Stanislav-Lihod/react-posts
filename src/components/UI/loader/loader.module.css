@@ -1,0 +1,24 @@
+.loader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 92px;
+  height: 92px;
+  border-radius: 50px;
+  border: 5px dotted green;
+  animation: rotate 1.2s infinite;
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg) scale(1);
+  }
+
+  50%{
+    transform: rotate(180deg) scale(0.9);
+  }
+
+  100%{
+    transform: rotate(359deg) scale(1);
+  }
+}
