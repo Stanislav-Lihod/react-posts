@@ -16,7 +16,7 @@ export default function Pagination({totalPages, page, setPage, fetchPosts, limit
       {arrayPages.map(p=>(
         <MyButton 
           onClick={()=>{changePage(p)}}
-          active = {page === p}
+          active = {page === p ? 1: 0}
           key={p} 
           title={p}
         />
